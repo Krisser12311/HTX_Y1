@@ -1,0 +1,76 @@
+:root {
+    --clr-space: #1b2845;
+    --clr-indggo: #274060;
+    --clr-biazzled: #335c81;
+    --clr-light-blue: #5899E2;
+    --clr-black: #0d0d0d;
+    --clr-background: #f2f2f2f2;
+    --clr-white: #f4f4f4c9;
+    --clr-submit: #12b800;
+}
+html, body, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* This is some code i made for the project im working on called Triant. */
+/* Header */
+header {
+    background: var(--clr-space);
+    width: 100%;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav h1 {
+    color: var(--clr-white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-list a {
+    color: var(--clr-white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    margin: 50px auto;
+}
+
+.information {
+    text-align: center;
+    background-color: var(--clr-white);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+
+
+.input-field input {
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--clr-biazzled);
+    text-align: center;
+    margin-left: 80px;
+}

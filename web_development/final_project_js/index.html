@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>energy distribution by Kristoffer S.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="nav">
+                <div class="title">
+                    <h1>Energi fordeling</h1>
+                </div>
+                <div class="nav-list">
+                    <a href="#result">Resultat</a>
+                </div>
+            </div>
+        </header>
+        <!-- Main container -->
+        <div class="main-container">
+            <div class="information">
+                <h1>Regn energi indehold af fødevare:</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsam? Omnis, nemo possimus neque quidem ut expedita quis aperiam voluptas rem dignissimos voluptatibus veritatis nam esse quae sint architecto magnam labore quod ea similique mollitia amet quia porro laborum? At mollitia in accusamus corrupti perspiciatis cupiditate explicabo maxime assumenda eos ratione alias illum unde quidem, iste dignissimos excepturi saepe facilis veniam temporibus deserunt nulla odio, nesciunt adipisci. A, reprehenderit minus!</p>
+            </div>
+            <!-- What to type? -->
+            <h3>Indtast her indhold pr hundrede gram samt navn på produkt</h3>
+            <!-- Input fields -->
+            <div class="input-field">
+                <div class="list">
+                    <label>Produkt navn:</label><br><br>
+                    <input type="text" id="productName" placeholder="Produkt navn">
+                </div>
+                <div class="list">
+                    <label>Protein indhold pr hundrede gram:</label><br><br>
+                    <input type="number" id="protein" placeholder="Protein">
+                </div>
+                <div class="list">
+                    <label>Fedt indhold pr hundrede gram:</label><br><br>
+                    <input type="number" id="fat" placeholder="Fedt">
+                </div>
+                <div class="list">
+                    <label>Kulhydrater indhold pr hundrede gram:</label><br><br>
+                    <input type="number" id="carbohydrates" placeholder="Kulhydrater">
+                </div>
+                <div class="list" id="calculation">
+                    <button onclick="calculateEnergyDistribution()">Beregn</button>
+                    <button onclick="clearInput()">SOME STUPIDF</button>
+                </div>
+            </div>
+            <div class="popup">
+                <div class="results">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Go to result page -->
+    <script src="main.js"></script>
+    </body>
+</html>
