@@ -6,6 +6,7 @@
     --clr-black: #0d0d0d;
     --clr-background: #f2f2f2f2;
     --clr-white: #f4f4f4c9;
+    --clr-gray-white: #dfd7d7;
     --clr-submit: #12b800;
 }
 html, body, div {
@@ -73,4 +74,36 @@ header {
     border: 1px solid var(--clr-biazzled);
     text-align: center;
     margin-left: 80px;
+}
+
+/* popup window */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.popup-content {
+    width: 50%;
+    height: auto;
+    background-color: var(--clr-gray-white);
+
+
+}
+
+#close:hover {
+    /* color: var(--clr-white); */
+    background: red;
+    transition: 300ms;
+    border-radius: 0.5vh;
 }
