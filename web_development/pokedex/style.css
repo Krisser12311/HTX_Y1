@@ -1,0 +1,401 @@
+:root {
+    --clr-bc: #f3f3f3;
+    --clr-redbc: #e55958;
+    --clr-sdex: #2f2f31;
+    --clr-center-brick: #b64d47;
+    --clr-dpad: #28282b;
+    --clr-green: green;
+    --clr-black: black;
+    --clr-lightgray: lightgray;
+}
+
+
+html, body {
+    margin: 0;
+    height: 100%; 
+    overflow: hidden
+    
+}
+
+body {
+    background-color: var(--clr-bc); 
+    zoom: 0.7; /* This, this is magic (Here we zoom out the browser becasuse i made the pokedex to big in the begning.) */
+}
+
+/* This is all styling for the loudspeaker at the left side  */
+.loudspeaker { 
+    margin-left: 82px;
+    margin-top: 80px;
+    position: fixed;
+    background-color: var(--clr-redbc);
+    width: 190px;
+    height: 200px;
+    border-radius: 100px 0px 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Here I defind the flex box container for the loudspeaker */
+.shelf {
+    padding-left: 10px;
+    position: fixed;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%; /* 50% = round */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+/* This is a flex box inside the main loudspeaker flex box, This is done to make it easier for mee to make the loudspeaker part */
+.grid {
+    width: 120px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    column-gap: 60px;
+    justify-content: center;
+}
+
+/* This is the styling for the black dots that makes the loudspeaker */
+.grid-loudspeaker {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--clr-black);
+}
+
+/* This is the box around the dpad.  */
+.dpad {
+    margin-top: 418px;
+    margin-left: 10px;
+    width: 260px;
+    height: 355px;
+    border-radius: 50%;
+    background-color: var(--clr-sdex); /* sdex clr is defind at the top of the code */
+    border: 1px solid black;
+    border-radius: 178px 0px 0px 178px;
+    position: absolute;
+    box-shadow: -18px 2px 40px 4px rgba(0,0,0,0.75);
+}
+
+/* This is the flex box element where the dpad is defind. */
+.dpad-center {
+    margin-left: 60px;
+    margin-top: 58px;
+    position: fixed;
+    background-color: var(--clr-dpad);
+    width: 228px;
+    height: 253px;
+    z-index: 1;
+    border-radius: 127px 0px 0px 127px;
+    box-shadow: inset 10px 2px 25px -6px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Here We defind the green led elements flexbox */
+.led-container {
+    margin-top: 52px;
+    margin-left: -11px;
+    position: fixed;
+    width: 228px;
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* This is were the styling for the greeen led happens */
+.led { 
+    margin-left: 10px;
+    margin-top: 10px;
+    position: fixed;
+    background-color: var(--clr-green);
+    width: 20px;
+    height: 15px;
+}
+
+/* This is the flex box container for the dpad. */
+.dpad-container {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0px;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: var(--clr-dpad);
+    border: 1px solid var(--clr-black);
+}
+
+/* This is a new flex box container that makes that center it all and align the items in center. */
+.dpad-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0px;
+    column-gap: 0px;
+    width: 150px;
+    height: 35px;
+}
+
+/* This is the styling for the buttom at the top */
+.up {
+    width: 35px;
+    height: 35px;
+    background-color: var(--clr-lightgray);
+    border-radius: 5px 5px 0px 0px;
+}
+
+/* This is the styling for the dpad left buttom */
+.left {
+    width: 35px;
+    height: 35px;
+    background-color: var(--clr-lightgray);
+    border-radius: 5px 0px 0px 5px;
+}
+
+/* This is the styling for the dpad down buttom  */
+.down {
+    width: 35px;
+    height: 35px;
+    background-color: var(--clr-lightgray);
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* This is the styling for the dpad center buttom */
+.center {
+    width: 35px;
+    height: 35px;
+    background-color: var(--clr-lightgray);
+}
+
+/* This is the styling for the dpad right buttom */
+.right {
+    width: 35px;
+    height: 35px;
+    background-color: var(--clr-lightgray);
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* The pokedex it self */
+.main-container {
+    margin-top: 8px;
+    margin-left: 270px;
+    position: fixed;
+    background-color: var(--clr-redbc);
+    height: 770px;
+    width: 500px;
+    border-radius: 5px 40px 40px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 12px 11px 49px -18px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 11px 49px -18px rgba(0,0,0,0.75);
+    box-shadow: 12px 11px 49px -18px rgba(0,0,0,0.75);
+}
+
+/* This is the background at the top */
+.background-top {
+    position: fixed;
+    margin-top: 60px;
+    margin-right: 30px;
+    margin-right: 20px;
+    background-color: var(--clr-sdex);
+    height: 250px;
+    width: 450px;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: var(--clr-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Here we make the top screen in the pokedex */
+.top-screen {
+    position: absolute;
+    margin-right: 30px;
+    width: 360px;
+    height: 280px;
+    background-color: var(--clr-black);
+    border-radius: 10px;
+    border: 10px solid gray;
+}
+
+/* At the right side in the top you se a thing that looks like a microphone this is where we defind it */
+.top-microphone {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 395px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--clr-black);
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.454);
+}
+
+/* This this the middle hinge look a like */
+.hinge {
+    margin-top: 380px;
+    height: 30px;
+    width: 500px;
+    background-color: var(--clr-redbc);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1px 44px 4px rgba(0,0,0,0.3);
+}
+
+.hinge-flex {
+    height: 30px;
+    width: 70px;
+}
+
+/* Stuff has a wird name this is because it does some wird stuff */
+.stuff {
+    height: 30px;
+    width: 70px;
+    background-color: var(--clr-center-brick);
+}
+
+#hinge-right {
+    border-radius: 3px 0px 0px 3px;
+}
+
+#hinge-left {
+    border-radius: 0px 3px 3px 0px;
+}
+
+.hinge-microphone-flex {
+    height: 30px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hinge-microphone {
+    position: fixed;
+    width: 10px;
+    height: 20px;
+    background-color: var(--clr-black);
+    border-radius: 2px;
+}
+
+
+.background-bottom {
+    position: fixed;
+    margin-top: 470px;
+    margin-right: 30px;
+    background-color: var(--clr-sdex);
+    height: 250px;
+    width: 450px;
+    border-radius: 0px 5px px 10px;
+    border-width: 0.5px 0.5px 0.5px 0px;
+    border-style: solid;
+    border-color: var(--clr-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-screen {
+    position: absolute;
+    margin-right: 30px;
+    width: 360px;
+    height: 280px;
+    background-color: var(--clr-black);
+    border-radius: 10px;
+    border: 10px solid gray;
+}
+
+.bottom-buttoms {
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 400px;
+    width: 20px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.btn {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid var(--clr-black);
+}
+
+.sdex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 770px;
+    margin-top: 480px;
+    position: fixed;
+    background-color: var(--clr-sdex);
+    width: 200px;
+    height: 220px;
+    border-radius: 0px 100px 100px 0px;
+    border-color: #808080;
+    border-style: solid;
+    border-width: 5px 5px 5px 0px;
+    -webkit-box-shadow: 0px -8px 40px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -8px 40px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px -8px 40px 4px rgba(0,0,0,0.75);
+}
+
+.out-circle {
+    margin-bottom: 100px;
+    margin-left: 100px;
+    position: fixed;
+    background-color: var(--clr-black);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid var(--clr-sdex);
+}
+
+.main-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    margin-right: 10px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.second-circle {
+    background-color: gray;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 8px solid var(--clr-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-circle {
+    background-color: var(--clr-green);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 10px solid var(--clr-black);
+}
