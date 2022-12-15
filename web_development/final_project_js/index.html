@@ -14,16 +14,14 @@
                 <div class="title">
                     <h1>Energi fordeling</h1>
                 </div>
-                <div class="nav-list">
-                    <a href="#result">Resultat</a>
-                </div>
             </div>
         </header>
         <!-- Main container -->
         <div class="main-container">
             <div class="information">
                 <h1>Regn energi indehold af fødevare:</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsam? Omnis, nemo possimus neque quidem ut expedita quis aperiam voluptas rem dignissimos voluptatibus veritatis nam esse quae sint architecto magnam labore quod ea similique mollitia amet quia porro laborum? At mollitia in accusamus corrupti perspiciatis cupiditate explicabo maxime assumenda eos ratione alias illum unde quidem, iste dignissimos excepturi saepe facilis veniam temporibus deserunt nulla odio, nesciunt adipisci. A, reprehenderit minus!</p>
+                <p>Førende er en beregner lavet til at beregne mængderne af kulhydrater, fedt og protein for der med at finde frem til om det er sundt. Når en fødevare er sund må det antages at andelen af kulhydrater er 55% Fedt er 30% Og protein er 15%
+                    Du skal blot indtaste den ønskede fødevares indehold pr hundrede gram derefter tryk beregn. Når du har trykket på beregn vil der dukke et popup vindue op med resultaterne</p>
             </div>
             <!-- What to type? -->
             <h3>Indtast her indhold pr hundrede gram samt navn på produkt</h3>
@@ -47,16 +45,27 @@
                 </div>
                 <div class="list" id="calculation">
                     <button onclick="calculateEnergyDistribution()">Beregn</button>
-                    <button onclick="clearInput()">SOME STUPIDF</button>
+                    <button onclick="clearInput()">Ryd input fælter</button>
                 </div>
             </div>
-            <div class="popup">
+            <div id="popup" class="popup">
                 <div class="popup-content">
-                    <h1>Resultat</h1>
-                    <div class="results">
-                        
+                    <div id="title" class="row">
+                        <h1>Resultat</h1>
                     </div>
-                <button id="close" onclick="closePopup()">LUK</button>
+                    <div id="answer" class="row">
+                        <div class="results">
+                            <p id="productNameRes"></p><br><br>
+                            <p id="proteinRes"></p><br><br>
+                            <p id="fatRes"></p><br><br>
+                            <p id="carbsRes"></p><br><br>
+                            <p id="healthyRes"></p><br><br>
+                        </div>
+                    </div>
+                    <div id="close" class="row">
+                        <button id="close" onclick="closePopup()">LUK</button>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Go to result page -->

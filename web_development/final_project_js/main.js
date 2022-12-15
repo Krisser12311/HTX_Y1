@@ -2,8 +2,8 @@
 // Date: 14/12/2022
 
 // popup variables
-const popup = document.getElementById('popup')
-//popup.style.display = 'none'
+var popup = document.getElementById('popup');
+popup.style.display = 'none';
 
 // variables for the input fields
 let productName = document.getElementById("productName");
@@ -23,7 +23,6 @@ function calculateEnergyDistribution() {
         // checks if product name is an integer
         if (isNaN(parseInt(productName.value)) == true) {
             // here we are going to calculate the energy distribution
-            console.log("calculating energy distribution...");
             // 55% of the energy comes from carbs, 30% from fat and 15% from protein
             let energyDistribution = [carbsDistribution = 17, fatDistribution = 37, proteinDistribution = 17];
 
@@ -34,7 +33,6 @@ function calculateEnergyDistribution() {
                 protein: protein.value * energyDistribution[2],
                 total: (carbs.value * energyDistribution[0]) + (fat.value * energyDistribution[1]) + (protein.value * energyDistribution[2]),
             }
-            console.log("total energy: " + energy.total); // DEBUG TOOL
             
             // calculate the energy distribution in percentages
             let energyDistributionPercentages = {
@@ -42,25 +40,27 @@ function calculateEnergyDistribution() {
                 fat: (energy.fat / energy.total) * 100,
                 protein: (energy.protein / energy.total) * 100,
             }
-            console.log("energy distribution in percentages: " + energyDistributionPercentages.carbs + "%, " + energyDistributionPercentages.fat + "%, " + energyDistributionPercentages.protein + "%");
             // checks if the energy distribution is correct
+            document.getElementById("productNameRes").innerHTML = "Product Name: " + productName.value;
+            document.getElementById("carbsRes").innerHTML = "Carbohydrates:" + Math.round(energyDistributionPercentages.carbs) + "%";
+            document.getElementById("fatRes").innerHTML = "Fat:" + Math.round(energyDistributionPercentages.fat)+ "%";
+            document.getElementById("proteinRes").innerHTML = "Protein: " + Math.round(energyDistributionPercentages.protein) + "%";
             if (energyDistributionPercentages.carbs + energyDistributionPercentages.fat + energyDistributionPercentages.protein == 100) {
-                console.log("energy distribution is correct!");
                 // check if the results is 55% of the energy comes from carbs, 30% from fat and 15% from protein
+                // opens the results popup page.
                 if (energyDistributionPercentages.carbs == 17 && energyDistributionPercentages.fat == 37 && energyDistributionPercentages.protein == 17) {
-                    console.log("This is healthy!");
+                    document.getElementById("healthyRes").innerHTML = "Healthy";
                     // clear the input fields
                     // add the results to the results object add percentage, product name, energyDistribution and if it is healthy or not
                     results[productName.value] = {
                         energyDistribution: energyDistributionPercentages,
                         healthy: true,
                     }
-                    // opens the results popup page.
                     openPupup();
                     // clear the input fields
                     clearInput();
                 } else {
-                    console.log("This is not healthy!");
+                    document.getElementById("healthyRes").innerHTML = "Not Healthy";
                     // add the results to the results object add percentage, product name, energyDistribution and if it is healthy or not
                     results[productName.value] = {
                         energyDistribution: energyDistributionPercentages,
@@ -83,7 +83,6 @@ function calculateEnergyDistribution() {
 }
 
 function clearInput() {
-    console.log("emptying input fields...");
     protein.value = "";
     fat.value = "";
     carbs.value = "";
@@ -96,13 +95,12 @@ function showResults() {
         alert("There are no results!");
     } else {
         // show the results
-        console.log(results);
     }
 }
 
 const openPupup = () => {
     // open the popup
-    //popup.style.display = 'block';
+    popup.style.display = 'block';
 
     // check if the results object is empty
     if (Object.keys(results).length == 0) {
@@ -110,15 +108,15 @@ const openPupup = () => {
     } else {
        // assign the results to the popup list
         for (let i in results) {
-            document.getElementById("productNameRes").innerHTML = results[i].energyDistribution.productName;
-            document.getElementById("carbsRes").innerHTML = results[i].energyDistribution.carbs;
-            document.getElementById("fatRes").innerHTML = results[i].energyDistribution.fat;
-            document.getElementById("proteinRes").innerHTML = results[i].energyDistribution.protein;
+            document.getElementById("productNameRes").value = results[i].productName;
+            document.getElementById("carbsRes").value = results[i].energyDistribution.carbs;
+            document.getElementById("fatRes").value = results[i].energyDistribution.fat;
+            document.getElementById("proteinRes").value = results[i].energyDistribution.protein;
             // check if the product is healthy or not
             if (results[i].healthy == true) {
-                document.getElementById("healthyRes").innerHTML = "Healthy";
+                document.getElementById("healthyRes").value = "Healthy";
             } else {
-                document.getElementById("healthyRes").innerHTML = "Not Healthy";
+                document.getElementById("healthyRes").value = "Not Healthy";
             }
         }
     }
