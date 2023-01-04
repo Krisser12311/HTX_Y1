@@ -1,4 +1,4 @@
-# This is made for "opgavesæt" 1 in the course "Python for begyndere"
+# This is made for "opgavesæt 1" in the course "Python for begyndere"
 
 # Imports
 import random
@@ -36,15 +36,54 @@ def findLowestNumber(num1, num2, num3):
     else:
         print(num3)
 
-# make random 8 ball
 def eightBall():
     TheBall = random.randrange(0, 8)
     print(eightBallTxT[TheBall])
 
-# make random troll 8 ball
 def trollEightBall():
     TheBall = random.randrange(0, 8)
     print(TheBall)
     print(trollEightBallTxT[TheBall])
 
-trollEightBall()
+
+def is_leap_year(year):
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                print("True")
+            else:
+                print("False")
+        else:
+            print("True")
+    else:
+        print("False")
+
+def isPrimeInt(number):
+    if number == 2:
+        print("True")
+    elif number % 2 == 0:
+        print("False")
+    else:
+        for i in range(3, number, 2):
+            if number % i == 0:
+                print("False")
+                break
+        else:
+            print("True")
+
+def factorial(number):
+    if number == 0:
+        print("1")
+    else:
+        result = 1
+        for i in range(1, number + 1):
+            result *= i
+        print(result)
+
+def tipCalculator(bill):
+    if bill * 0.15 < 20:
+        print("20")
+    elif bill * 0.15 <= 100:
+        print(bill * 0.15)
+    else:
+        print(f"100 you could also play {bill * 0.15}")
