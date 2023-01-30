@@ -3,11 +3,6 @@
 # Imports
 import random
 
-# variables
-num = 0
-num1 = 0
-num2 = 0
-num3 = 0
 
 # array list
 eightBallTxT = ["It is certain", "It is decidedly so", "Without a doubt", "Yes definitely", "You may rely on it", "As I see it, yes", "Most likely", "Outlook good", "Yes", "Signs point to yes", "Reply hazy try again", "Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", "Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very doubtful"]
@@ -37,7 +32,9 @@ def findLowestNumber(num1, num2, num3):
         print(num3)
 
 def eightBall():
+    question = input("Ask a question: ")
     TheBall = random.randrange(0, 8)
+    print(question)
     print(eightBallTxT[TheBall])
 
 def trollEightBall():
@@ -46,7 +43,7 @@ def trollEightBall():
     print(trollEightBallTxT[TheBall])
 
 
-def is_leap_year(year):
+def isLeapYear(year):
     if year % 4 == 0:
         if year % 100 == 0:
             if year % 400 == 0:
@@ -66,19 +63,24 @@ def isPrimeInt(number):
     else:
         for i in range(3, number, 2):
             if number % i == 0:
-                print("False")
+                print("false")
                 break
         else:
             print("True")
+
+def primeInts():
+    for i in range(0, 1000000):
+        print(i)
+        isPrimeInt(i)
 
 def factorial(number):
     if number == 0:
         print("1")
     else:
-        result = 1
-        for i in range(1, number + 1):
-            result *= i
-        print(result)
+        for i in range(1, number):
+            number *= i
+        print(number)
+
 
 def tipCalculator(bill):
     if bill * 0.15 < 20:
@@ -86,4 +88,4 @@ def tipCalculator(bill):
     elif bill * 0.15 <= 100:
         print(bill * 0.15)
     else:
-        print(f"100 you could also play {bill * 0.15}")
+        print(f"100 you could also pay {bill * 0.15}")
