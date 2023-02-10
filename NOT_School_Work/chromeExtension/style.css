@@ -1,0 +1,22 @@
+body {
+    min-width:300px;
+}
+
+a {
+    text-align: center;
+    margin-left: 100px;
+}
+
+.courses {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+#danish {
+    text-align: center;
+}
