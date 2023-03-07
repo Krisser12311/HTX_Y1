@@ -1,0 +1,8 @@
+api/env 
+.idea/
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+api/__pycache__/

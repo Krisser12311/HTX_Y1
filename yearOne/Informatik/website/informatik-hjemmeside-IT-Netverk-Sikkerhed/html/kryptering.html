@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" href="../spreadsheet/colors.css">
+    <link rel="stylesheet" href="../spreadsheet/global.css">
+    <link rel="stylesheet" href="../spreadsheet/normalize.css">
+    <link rel="stylesheet" href="../spreadsheet/article.css">
+    <link rel="stylesheet" href="">
+    <title>Kryptering</title>
+</head>
+<body>
+<header>
+    <div class="nav">
+        <div class="group-info">
+            <h1 id="home">Geek info</h1>
+        </div>
+        <div class="nav-options">
+            <div class="nav-list">
+                <a href="hardware.html">Hardware</a>
+                <a id="navActive" href="kryptering.html">Kryptering</a>
+                <a href="netverk.html">Netværk</a>
+                <a href="itSikkerhed.html">IT-sikkerhed</a>
+                <a href="api.html">API sikkerhed</a>
+
+            </div>
+            <div id="menu" class="menu">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="showNavBar">
+        <div class="nav-list-responsive">
+            <div class="responsive-container">
+                <a href="hardware.html">Hardware</a>
+            </div>
+            <div class="responsive-container">
+                <a href="api.html">API sikkerhed</a>
+            </div>
+            <div class="responsive-container">
+                <a href="netverk.html">Netværk</a>
+            </div>
+            <div id="responsive-container-active" class="responsive-container">
+                <a href="kryptering.html">Kryptering</a>
+            </div>
+            <div class="responsive-container">
+                <a href="itSikkerhed.html">IT-sikkerhed</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="main-container">
+    <div class="title-topic">
+        <div class="title-container">
+            <div class="rubic-container">
+                <div class="stick"></div>
+                <div class="rubic">
+                    <h1>Kryptering</h1>
+                    <h4><span class="bold">Niveau: </span><span class="not-bold">Begynder</span> </h4>
+                    <h3><span class="bold">Skrevet af:</span><span class="not-bold"> Daniel, Theis, og Kristoffer</span></h3>
+                </div>
+                <div class="stick"></div>
+            </div>
+        </div>
+        <div class="title-image">
+            <img src="../assets/It-og-cybersikkerhed.jpg" alt="hacker man">
+            <p>Kilde: <a href="https://www.shutterstock.com/image-photo/internet-security-data-protection-concept-blockchain-1202221816">shutterstock</a> </p>
+        </div>
+    </div>
+    <div class="pause"></div>
+    <div class="text-field">
+        <h2>Hvad er kryptering</h2>
+        <p>Kryptering er en måde at skjule en beskeder på, det gør man ved at gøre den ulæseligt for dem som ikke har kodeordet en så kaldt krypterings nøgle. Man kryptere ting man ikke ville have at andre ser det kan være ting som fx beskeder og billeder. Dette bliver gjort på masser af forskellige måder alle med deres egne fordele og ulemper, nogen af måderne kommer du til at læse om på denne side.</p>
+
+        <h2>Symmetriske eller asymmetriske krypteringer</h2>
+        <p>Der er to hovedgrupper af krypteringer den symmetriske og den asymmetriske. Den symmetriske fungerer som en lås, man har en nøgle som man giver til dem som vil have adgang også kan dem med adgang komme ind og ud. Den asymmetriske fungerer som en postkasse all kan lægge noget ind gemmen brevsprækken eller den offentlige nøgle men kun dem med den private nøgle kan tage ting ud. På denne side kommer vi kun til at tale om symmetriske kryptering</p>
+
+        <h2>Cæsar-koden</h2>
+        <p>Cæsar-koden er en basal form for kryptering, Cæsar-koden er også kendt som forskydnings-koden hvor hvert bogstav bliver forskudt med en bestemt værdi, dette resulterer så i at hvis koden er 7 så bliver "a" til "h". Så hvis man har sætningen "bananer smager godt" og koden er 4 så bliver sætningen til "fereriv wqekiv kshx"</p>
+        <div class="small-image-text-field">
+            <img src="../assets/caesar-cipher.png" alt="demostation billede af cæsar koden">
+            <p>Kilde: <a href="https://www.101computing.net/caesar-cipher/">101Computing.net</a></p>
+        </div>
+        <h3>Hvordan kan man bryde en Cæsar-kode</h3>
+        <p>Cæsar-koden er nemt at løse eftersom at man kan bruge frekvensanalyse hvor man kigger på hvor ofte de forskellige tegn bliver brugt og derfra finde forskydingen/koden hvis man ser "o" bliver brugt flest gang kan man så gætte at "e" er forskudt til "o"</p>
+        <div class="small-image-text-field">
+            <img src="../assets/Frequency-analysis.png" alt="Frequency analysis graf">
+            <p>Kilde: <a href="https://en.wikipedia.org/wiki/File:English_letter_frequency_(alphabetic).svg">Wikipedia</a></p>
+        </div>
+        <p>En anden måde af at bryde cæsar-koden er at bare prøve alle forskellige koder, eftersom der kun er 27 muligheder, 25 hvis det er engelsk. Da hvis man forskyder med 28 så bliver a til a og b til b, og forskyder man med 29 så er det ligesom at forskyde med 1</p>
+
+        <h2>Vigenère kryptering</h2>
+        <p>Vigenère kryptering fungerer ligesom Cæsar-koden men bruger bogstaver i sted for tal og man kan bruge koder som er mere end et tegn lang. Man laver en kode fx abe og tager et ord fx Invasion og gentager abe indtil at det har lige så mange tegn som ordet så det bliver til "abeabeab" og så for hvert ord bruger man en tabel som denne til at finde det tilsvarende tegn i dette tilfælde bliver det "Iozatmoo". Fordelen med denne type er at det samme tegn ikke altid ender med at være det samme når det er krypteret.</p>
+        <div class="small-image-text-field">
+            <img src="../assets/Vigenere.png" alt="Vigenere tabel">
+            <p>Kilde: <a href="https://da.wikipedia.org/wiki/Fil:Vigen%C3%A8re_square_shading.svg">Wikipedia</a></p>
+        </div>
+
+        <h2>Hvordan deler man en kode sikkert</h2>
+        <p>Man kan ikke bare sende en kode til en anden på internettet da man ikke hved med der lytter med så man opfandte Diffie-Hellman key exchange protokollen hvor man har to personer John og Doe som bliver enig på et stor prim tal, p, og en primitiv rod modulo g. som gerne må blive delt på en usikker kanal. De hver vægler nu et hemmeligt tal som de ikke deler j og d. De hver berenger nu et offentlige tal på de tal de er enig i p og g John regner J = g^j mod p og Doe renger D = g^d mod p som de så deler. John renger nu K = D^j mod p og Doe renger K = J^d mod p og på grund af egenskaberne ved modulær aritmetik har de nu den samme kode selv om de aldre har delt deres personlige hemmelige kode. Nede under er der en forklaring med billede</p>
+        <div class="small-image-text-field">
+            <img src="../assets/Diffie-Hellman.png" alt="Diffie Hellman med farver">
+            <p>Kilde: <a href="https://simple.wikipedia.org/wiki/Diffie-Hellman_key_exchange#/media/File:Diffie-Hellman_Key_Exchange.svg">Wikipedia</a></p>
+        </div>
+    </div>
+</div>
+<script src="../javascript/global.js"></script>
+</body>
+</html>
