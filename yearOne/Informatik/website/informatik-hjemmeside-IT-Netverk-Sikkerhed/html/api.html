@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" href="../spreadsheet/colors.css">
+    <link rel="stylesheet" href="../spreadsheet/global.css">
+    <link rel="stylesheet" href="../spreadsheet/normalize.css">
+    <link rel="stylesheet" href="../spreadsheet/article.css">
+    <link rel="stylesheet" href="">
+    <title>API Sikkerhed</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="group-info">
+                <h1 id="home">Geek info</h1>
+            </div>
+            <div class="nav-options">
+                <div class="nav-list">
+                    <a href="hardware.html">Hardware</a>
+                    <a href="kryptering.html">Kryptering</a>
+                    <a href="netverk.html">Netværk</a>
+                    <a href="itSikkerhed.html">IT-sikkerhed</a>
+                    <a id="navActive" href="api.html">API sikkerhed</a>
+                    
+                </div>
+                <div id="menu" class="menu">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="showNavBar">
+            <div class="nav-list-responsive">
+                <div class="responsive-container">
+                    <a href="hardware.html">Hardware</a>
+                </div>
+                <div id="responsive-container-active" class="responsive-container">
+                    <a href="api.html">API sikkerhed</a>
+                </div>
+                <div class="responsive-container">
+                    <a href="netverk.html">Netværk</a>
+                </div>
+                <div class="responsive-container">
+                    <a href="kryptering.html">Kryptering</a>
+                </div>
+                <div class="responsive-container">
+                    <a href="itSikkerhed.html">IT-sikkerhed</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="title-topic">
+            <div class="title-container">
+                <div class="rubic-container">
+                    <div class="stick"></div>
+                    <div class="rubic">
+                        <h1>Api Sikkerhed</h1>
+                        <h4><span class="bold">Niveau: </span><span class="not-bold">Intermediate</span> </h4>
+                        <h3><span class="bold">Skrevet af:</span><span class="not-bold"> Daniel, Theis, og Kristoffer</span></h3>
+                    </div>
+                <div class="stick"></div>
+                </div>
+            </div>
+            <div class="title-image">
+                <img src="../assets/api-connect-devices.png" alt="">
+                <a href="https://blogs.mulesoft.com/learn-apis/api-led-connectivity/what-are-apis-how-do-apis-work/"> kilde: What are APIs and how do APIs work?</a>
+            </div>
+        </div>
+        <div class="pause"></div>
+        <div class="text-field">
+            <h3>Hvad er en API?</h3>
+            <p>En API (Application Programming Interface) er som en tjener på en restaurant.</p>
+            <p>Præcis lige som tjeneren er en slags mellemmand mellem dig og køkknet er en API en mellemmand mellem to stykker software eller systemer. Når du bestiller mad fra en tjener, tager de din ordre til køkkenet, køkkenet forbereder din mad, og tjeneren bringer maden tilbage til dig. På samme måde, når du foretager en anmodning til en API, tager den anmodningen til systemet eller applikationen, du prøver at få adgang til, henter informationen eller udfører den anmodede handling og returnerer resultaterne tilbage til dig. Med andre ord definerer en API en række regler, protokoller og værktøjer, der tillader forskellige softwareapplikationer at kommunikere og integrere med hinanden. Det gør det muligt for udviklere at bygge nye applikationer eller tilføje nye funktioner til eksisterende applikationer ved at udnytte funktionaliteten i andre software-systemer uden at skulle bygge alt fra bunden.</p>
+
+            <h2>Hvad bruger man en API til?</h2>
+            <p>Man bruger en API til at tillade forskellige softwareapplikationer at snakke sammen og interagere med hinanden på en standardiseret måde. API gør det muligt at snakke påtværs af systemer. Lad os sige at du gerne ville have fat i hvad produkter du har på lager, så i stedet for at systemet skulle have direkte adgang til databasen så kan man lave en API som er mellemmand dette kan gøre det sværre for hacker at få adgang til databaser systmer og andet.</p>
+
+            <p>API'er kan bruges til en række formål, såsom:
+                <ul>
+                    <li>At integrere med betalingssystemer, såsom PayPal eller Stripe, i e-handelsapplikationer</li>
+                    <li>At integrere korttjenester, såsom Google Maps eller Mapbox, i applikationer, der kræver stedbaserede data</li>
+                    <li>At hente data fra sociale medier, såsom Twitter eller Facebook, for at analysere brugeradfærd</li>
+                    <li>At automatisere opgaver i cloud computing-platforme, såsom Amazon Web Services eller Microsoft Azure</li>
+                    <li>Tilgå andres data uden at få adgang til deres database</li>
+                </ul>
+            </p>
+            <p>Kort sagt, API'er afgørende for at muliggøre samarbejde mellem forskellige softwareapplikationer og systemer, hvilket giver mulighed for mere effektive og integrerede løsninger til forskellige formål.</p>
+            
+            <h2>Hvorfor bruger man api til login systemer?</h2>
+            <p>API'er bruges ofte til login systemer, fordi de kan gøre processen mere sikker og fleksibel.</p>
+            <p>Når en bruger logger ind på en applikation eller et websted, skal deres brugeroplysninger, såsom brugernavn og adgangskode, valideres mod en database eller et andet system. Ved at bruge en API til login kan brugeroplysningerne sendes fra applikationen eller websitet til en anden server, hvor valideringen af brugeroplysninger vil finde sted. Dette kan gøre login processen mere sikker, fordi brugeroplysningerne ikke er gemt på samme server som applikationen eller websitet. Hvis en hacker får adgang til applikationens eller websitet server, kan de ikke få adgang til brugeroplysningerne.</p>
+
+            <p>En anden fordel ved at bruge en API til login er, at det kan giver flere muligheder, til at ændre eller opgradere login systemet uden at skulle ændre på det hele. Hvis der er behov for at tilføje nye funktioner, såsom to faktor, kan dette gøres gennem API'en uden at skulle ændre hele akitekturen. Alt i alt kan API'er give mere sikkerhed og fleksibilitet til login system, hvilket kan forbedre brugerens oplevelse og beskytte brugeroplysninger mod trusler fra Hacker.</p>
+            
+            <h2>JWT Tokens</h2>
+            <p>De fleste Login systemer bruger det der hedder en JWT token, men hvad er en JWT token?</p>
+            <p>En JWT (JSON Web Token) er en type token, der bruges til at sende information sikkert mellem serveren og clienten det gør den som et JSON-objekt. Det bruges ofte til login systemer. En JWT-token består af tre dele: en header, en payload og en signatur. Headeren indeholder metadata om tokenet, såsom algoritmen, der bruges til kryptering. Payloaden indeholder den information, der skal sendes, såsom brugerinformation eller autorisationskrav. Signaturen er oprettet ved hjælp af en hemmelig nøgle og bruges til at verificere tokenets ægthed.
+            
+            Den største fordel ved at bruge JWT-token er, at de er selvstændige, hvilket betyder, at alle de nødvendige oplysninger er indeholdt i tokenet selv. Dette gør det nemmere at sende og det verificeret tokenet på tværs af forskellige platforme. som nævnt tidligere er en af de ting som gør JWT tokens gode er at man bruger en slags krypterings nøgle som verificere dine tokens. Som du kan se forneden så ville serveren ikke kunne forstå den token som der er på billedet da token ikke er verificeret (Dele af koden til API'en er fra kristoffers POS project Triant <a href="https://github.com/Krisser12311/Triant">Triant github</a> )</p>
+            <div class="small-image-text-field">
+                <img src="../assets/JWT.png" alt="">
+                <p>Kilde: <a href="https://jwt.io/">jwt.io</a></p>
+            </div>
+            <p>Altså hvis du ændre i tokenen uden at have krypterings nøglen vil serveren ikke kunne forstå den token den modtager dog hvis du har krypterings nøglen kan den ikke kende forskæl på en den selv har udsted og en der er forfalsket. Det kan ses på de to eksempeler forneden til venstre kam man se en token som er blevet ændret men ikke er blevet verificeret og til højre kan man se en manipuleret token som er blevet verificeret. Den til højre accepter serveren fordi den tror at den selv har lavet den. Den til venstre siger den nej tak til, for den kan ikke forstå hvad den vil hos ham.</p>
+            <div class="sidebyside-image-text-field">
+                <div class="sidebyside-images">
+                    <img src="../assets/notVerified.png" alt="notVerified">
+                    <img src="../assets/verifyed.png" alt="verifyed">
+                </div>
+                <p>Kilde: Taget selv (Dele af koden til API'en er fra kristoffers POS project Triant <a href="https://github.com/Krisser12311/Triant">Triant github</a> )</p>
+            <br>
+            <p>Her er et eksempel på hvordan det ser ud når man logger ind med en API</p>
+            <div class="image-text-field">
+                <img src="../assets/loginSucces.png" alt="">
+                <p>Kilde: Taget selv (Dele af koden til API'en er fra kristoffers POS project Triant <a href="https://github.com/Krisser12311/Triant">Triant github</a> )</p>
+            </div>
+            <p>På billedet ses den motede der bruges når man logger ind, til venstre nederst kan man se at der står dine login oplysninger, du kan se at din kode bliver sendt ukrypteret til API'en det er derfor man skal passe på når man sidder på offenligt netværk, da en hacker ville kunne lytte med og dermed få adgang til alle dine informationer den vej.</p>
+
+            <h2>Jamen er der så noget problem?</h2>
+            <p>Som med alt godt her i livet er der altid problematikker med alt. så selvom JWT-token har mange fordele, er der også nogle udfordringer og problematikker, der kan opstå ved brug af dem, det kunen være 
+                <ul>
+                    <li>Token tyveri: Hvis en uautoriseret person stjæler en JWT-token, kan de bruge den til at få adgang til beskyttede ressourcer eller udføre handlinger på vegne af den oprindelige bruger. Derfor er det vigtigt at beskytte JWT-token mod tyveri og misbrug.</li>
+                    <li>Token forfalskning: Hvis en hacker for crackedet din krypterings nøgle kan han/hun få uretmæssigt adgang til dine systemer og dermed udføre handlinger på vegne af den oprindelige bruger. Derfor er det vigtigt at sikre, at JWT-token er korrekt signeret og ikke kan ændres på nogen måde. </li>
+                    <li>Token udløb: JWT-token kan indeholde en udløbsdato eller en gyldighedsperiode, efter hvilken tokenet ikke længere er gyldigt. Hvis tokenet udløber, kan den oprindelige bruger miste adgang til beskyttede ressourcer eller blive tvunget til at logge ind igen. Det kan også være en udfordring at forny eller forlænge JWT-token, hvis det er nødvendigt.</li>
+                    <li>Token størrelse: Da tokens kan indeholde meget information kan de også godt blive et problem. Når den skal sendes til klienten.</li>
+                    <li>Token opbevaring: JWT-token opbevares normalt i klienten (eks. browseren), og det kan være udfordrende at beskytte tokenet mod tyveri eller misbrug på klientens side.</li>
+                </ul>
+                Disse problematikker kan minimeres ved at inføre passende sikkerhedsforanstaltninger og tænke over forsællige måder at bruge JWT-token på. 
+            </p>
+
+            <h3>Uretmæssigt adgang til informationer</h3>
+            <p>Hvis man glemmer at lukke stier på ens API (Application Programming Interface), kan det føre til alvorlige sikkerhedsproblemer. En API-sti er en URL, som en klient kan bruge til at tilgå en bestemt funktion eller data på en API-server.
+            Hvis en API-sti ikke er beskyttet ordentligt, kan uautoriserede brugere tilgå eller manipulere data, som de ikke har adgang til. Dette kan føre til tab af fortrolige informationer, og give en hacker mulighed for at udføre handlinger uden at have "hacket" sig ind i systemet.
+            
+            For eksempel, hvis en API-sti ikke er beskyttet, kan en angriber finde stien og tilgå data eller funktioner, som er beregnet til at være beskyttet og kun tilgængelige for autoriserede brugere. Angriberen kan også manipulere data på API serveren, som kan føre til datatab, økonomiske tab eller endda skade virksomhedens omdømme.
+            
+            Derudover kan en angriber også bruge API'en som et smuthul til at angribe andre systemer, der er tilknyttet API'en, som kan føre til flere alvorlige konsekvenser.
+            
+            Derfor er det afgørende at sikre, at alle API-stier er beskyttede og kun tilgængelige for autoriserede brugere. Dette kan gøres ved hjælp af eks JWT-tokens.</p>
+        </div>
+    </div>
+    <script src="../javascript/global.js"></script>
+</body>
+</html>

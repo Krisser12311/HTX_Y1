@@ -1,0 +1,138 @@
+
+/* Edits scrolbar for firefox */
+:root {
+    scrollbar-color: var(--clr-space) var(--clr-background) !important;
+    scrollbar-width: thin !important;
+} 
+
+/* Makes the scrollbar like on mac os for chrome */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-space);
+}
+
+
+
+/* Header */
+header {
+    background: var(--clr-space);
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav h1 {
+    color: var(--clr-white);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#navActive {
+    color: var(--clr-light-blue);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-list {
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.nav-list a {
+    color: var(--clr-white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+    .nav a {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        /* Flexbox */
+        min-height: 20px;
+        min-width: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 3px;
+        align-items: center;
+        border: 1px solid var(--clr-white);
+        padding: 4px;
+    }
+    .menu-bar {
+        display: flex;
+        height: 5px;
+        width: 30px;
+        background: var(--clr-white);
+        border-radius: 5px;
+    }
+}
+
+#showNavBar {
+    display: none;
+}
+.nav-list-responsive {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    background: var(--clr-space);
+}
+
+.responsive-container {
+    width: 30%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    background: var(--clr-indggo);
+}
+
+.responsive-container:hover {
+    background: var(--clr-biazzled);
+}
+
+/* This is the current site you are in. */
+#responsive-container-active {
+    color: var(--clr-white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    background: var(--clr-light-blue);
+}
+
+.responsive-container a {
+    color: var(--clr-white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}

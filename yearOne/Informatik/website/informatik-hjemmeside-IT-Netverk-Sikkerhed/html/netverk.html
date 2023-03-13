@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" href="../spreadsheet/colors.css">
+    <link rel="stylesheet" href="../spreadsheet/global.css">
+    <link rel="stylesheet" href="../spreadsheet/normalize.css">
+    <link rel="stylesheet" href="../spreadsheet/article.css">
+    <link rel="stylesheet" href="">
+    <title>Hardware</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="group-info">
+                <h1 id="home">Geek info</h1>
+            </div>
+            <div class="nav-options">
+                <div class="nav-list">
+                    <a href="hardware.html">Hardware</a>
+                    <a href="kryptering.html">Kryptering</a>
+                    <a id="navActive" href="netverk.html">Netværk</a>
+                    <a href="itSikkerhed.html">IT-sikkerhed</a>
+                    <a href="api.html">API sikkerhed</a>
+                </div>
+                <div id="menu" class="menu">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="showNavBar">
+            <div class="nav-list-responsive">
+                <div class="responsive-container">
+                    <a href="hardware.html">Hardware</a>
+                </div>
+                <div class="responsive-container">
+                    <a href="api.html">API sikkerhed</a>
+                </div>
+                <div id="responsive-container-active" class="responsive-container">
+                    <a href="netverk.html">Netværk</a>
+                </div>
+                <div class="responsive-container">
+                    <a href="kryptering.html">Kryptering</a>
+                </div>
+                <div class="responsive-container">
+                    <a href="itSikkerhed.html">IT-sikkerhed</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="title-topic">
+            <div class="title-container">
+                <div class="rubic-container">
+                    <div class="stick"></div>
+                    <div class="rubic">
+                        <h1>Netværk</h1>
+                        <h4><span class="bold">Niveau: </span><span class="not-bold">Begynder</span> </h4>
+                        <h3><span class="bold">Skrevet af:</span><span class="not-bold"> Daniel, Theis, og Kristoffer</span></h3>
+                    </div>
+                <div class="stick"></div>
+                </div>
+            </div>
+            <div class="title-image">
+                <img src="../assets/router.jpg" alt="Billede af router">
+                <a href="https://www.newegg.com/insider/how-to-choose-the-best-wireless-router-for-gaming/">Kilde: newegg</a>
+            </div>
+        </div>
+        <div class="pause"></div>
+        <div class="text-field">
+            <h2>Vigtige terms</h2>
+            <p>
+            <ul>
+                <li>Bandwidth - Transmissions kapacitetet, målt med bitrate.</li>
+                <li>Bitrate - Antallet af bits per. sekund, et system kan transmitere.</li>
+                <li>Latency - Tiden det tager for én bit at blive sendt fra sender til modtager.</li>
+                <li>Protocol – Et set regler og standarder der bliver brugt til at kommunikere mellem maskiner.</li>
+            </ul>
+            </p>
+
+            <h2>Fra Bit til Terabit</h2>
+            <p>Der findes forskellige måder, at sige antal bytes. Man starter med standard som er én bit, så kommer en byte som er 8 bit, så kommer én kilobyte som er 1024 bytes, én megabyte som er 1.048.576 bytes, én gigabyte som er 1.073.741.824 bytes, én terabyte som er 1.099.511.627.776 bytes. Disse data er fundet fra <a href="https://kb.iu.edu/d/ackw">University Information Technology Services.</a></p>
+            
+            <h2>Men hvad er en Bit så?</h2>
+            <p>En bit er den mindste data en computer kan sende og modtage. En Bit kan have to forskellige værdier disse værdier hedder 0 og 1, og er binære værdier fordi de kun kan være to ting.</p>
+            
+            <h2>Packets</h2>
+            <p>Nogle beskeder er for store til at, en computer kan sende det hele på en gang. Det er her Packets kommer ind i billedet, en packet er en mindre del af en større besked. For at en computer kan sende alt det den skal, har den nogle gange brug for at bruge mange packets. Der er mange typer af information der kan blive sendt med packets f.eks. Musik og Videoer.</p>
+            
+            <h2>Måder at sende signaler</h2>
+            <p>Der er flere måder at sende signaler på, de mest typiske er elektricitet, lys og radio. Elektricitet er det billigste og er derfor også det der bliver brugt i mange hjem, men over længere afstande er det bedre at bruge lyskabler (Fiber optic kabler) fordi det ikke mister signal over lange afstande, fiber optic kabler transporterer også data ved lysets hastighed hvilket er et stort plus. Der er også radio signaler som er trådløse, men de mister stadig signal over længere afstand.</p>
+
+            <h2>IP-adresser</h2>
+            <p>En IP-adresse er din computers adresse, det er bare et tal. Din IP-adresse kan f.eks. være 192.34.253.33. En IP-adresse siger ting om din PC eller Server som f.eks. Land/netværk, Region/netværk, undernetværk og din type af enhed.</p>
+
+            <h2>Hvordan connecter jeg så til en side?`</h2>
+            <p>Du sender en request videre til en DNS-server som så sender den videre til websitets server provider, Hvorefter sender den server så dataen tilbage til dig, alt dette sker inden for millisekunder. Der findes også forskellige typer af protocoler som f.eks HTTP (Hyper Text Transfer Protocol) og HTTPS (Hyper Text Transfer Protocol Secure). Ved HTTPS er dataen krypteret.</p>
+
+            <h2>Routers</h2>
+            <p>Din router fungerer lidt som en traffik manager, den vil altid vælge den billigste vej til serveren fra din PC. Billigste betyder ikke altid den der koster mindst, ting som politik, forhold mellem lande og tid spiller en rolle. Du ville jo ikke have at det tog lang tid bare for at være lidt billigere. </p>
+
+            <h2>Cookies</h2>
+            <p>En cookie er noget data en website samler og husker om dig, det kan f.eks være et brugernavn. Cookies kan også blive brugt til at samle data som kan hjælpe med reklamering.</p>
+
+            <h2>SSL og TLS </h2>
+            <p>SSL (Secure Sockets Layer) og TLS (Transport Layer Security) er det der beskytter din connection med en website. Websites kan også modtage certifikater som siger at det rent faktisk er den rigtige side.</p>
+
+            <h2>Wifi</h2>
+            <p>Wi-Fi er en trådløs teknologi, der bruger radiobølger til at overføre data mellem enheder. Det kræver en router, der fungerer som en access point for enhederne til at oprette forbindelse til internettet. Wi-Fi-signalet kan have begrænset rækkevidde og kan blive forstyrret af andre elektroniske enheder. Wi-Fi-netværk kan også krypteres for at beskytte mod uautoriseret adgang.</p>
+
+            <h2>TCP og UDP</h2>
+            <p>TCP (Transmission Control Protocol) og UDP (User Datagram Protocol) er to forskellige protokoller, der bruges til at sende data over internettet. TCP er pålidelig og sikrer, at alle data er modtaget i den rigtige rækkefølge, mens UDP er hurtigere, men mindre pålidelig og kan miste data under transmissionen. TCP bruges ofte til streaming af video og musik, mens UDP bruges til real-time kommunikation som online gaming. Det er vigtigt at vælge den rigtige protokol afhængigt af den specifikke opgave.</p>
+            
+        </div>
+    </div>
+    <script src="../javascript/global.js"></script>
+</body>
+</html>
