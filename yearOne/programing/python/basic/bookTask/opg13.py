@@ -28,7 +28,9 @@ def triangleDegree(a, b, c):
             B = math.acos((a**2 + c**2 - b**2) / (2 * a * c))
             C = math.acos((a**2 + b**2 - c**2) / (2 * a * b))
             # Return the degrees
-            return A, B, C
+            # Wheen the result is printed it must restart the function
+            print(A, B, C)
+            
     else:
         return "Error: The sides must be a number"
     
