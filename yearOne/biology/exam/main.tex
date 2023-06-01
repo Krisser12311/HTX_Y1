@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\input{settings/preamble.tex}
+
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=30mm,
+    bottom=30mm,
+}
+\hypersetup{
+    linkcolor=black,
+    colorlinks=false,
+    pdftitle={Biologi eksammen - af Kristoffer Sørensen},
+    pdfauthor={Kristoffer Sørensen},
+    % Remove the red border around links
+    pdfborder={0 0 0},
+}
+
+\pagestyle{fancy} % definds the pagestyleing
+\fancyhf{} % Removes the wired header text
+\renewcommand{\headrulewidth}{0pt} % Removes the line under the header
+\cfoot{Side \thepage\ af \pageref{LastPage}} % Sets the right side of the footer to "Page X of Y"
+%\lhead{Gruppe 1} % Sets the left side of the header to "Gruppe 1"
+
+\begin{document}
+    %\providecommand\NAT
+    \input{chapters/00TitlePage.tex}
+    % Alle spørgsmål vil få sin egen fil, som vil blive inkluderet her.
+    \input{chapters/01CelletyperOrfaneller.tex}
+    \input{chapters/02TransportIndUdCeller.tex}
+    \input{chapters/03BiokemiskeProcesser.tex}
+    \input{chapters/04Makromolekyler.tex}
+    \input{chapters/05Fordojelse.tex}
+    \input{chapters/06hormonreguleringKvinder.tex}
+    \input{chapters/07HormonreguleringMend}
+    \input{chapters/08OrganerKredslobLille.tex}
+    \input{chapters/09OrganerKredslobStor.tex}
+    \input{chapters/10Enzymer.tex}
+    \input{chapters/11Proteinsyntese.tex}
+    \input{chapters/12Genetik.tex}
+    \input{chapters/13Evolution.tex}
+    \input{chapters/14kulstofkredslob.tex}
+    \input{chapters/15DNAkromosomer.tex}
+    \input{chapters/16BakterielVekst.tex}
+    \input{chapters/99Bilag.tex}
+    %\bibliography{sources/library}
+\end{document}

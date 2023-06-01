@@ -20,7 +20,7 @@ class AddressBook:
         self.email = email
     
     def writeDataToJsonFile(self):
-        data = { # Here we create a dictionary with the data we want to write to the json file
+        data = { # Here we cereate a dictionary with the data we want to write to the json file
             "name": self.name,
             "address": self.address,
             "age": self.age,
@@ -35,19 +35,16 @@ class AddressBook:
             
         json_data.append(data) # Here we append the data to the list
         
-        with open("data.json", "w") as f: # Here we open the json file and write the data
-            json.dump(json_data, f)   # Here we dump the data to the json file
+        with open("data.json", "w") as f: 
+            json.dump(json_data, f)   #  Dumps the data to the json file
 
-# Make the insertUser function into a  
 def insertUser(name, address, age, phone, email):
-    # Here we check if the user input is valid by using regex
-    # We use the re.match() function to check if the user input is valid
     if re.match(nameRegexStatement, name):
         if re.match(addressRegexStatement, address):
             if re.match(phoneRegexStatement, phone): # This does not support +45 or 0045
                 if re.match(emailRegexStatement, email): 
                     if re.match(ageRegexStatement, age):
-                        # Here we create a new object of the AddressBook class
+                        # creates a new object of the AddressBook class
                         newAddressBook = AddressBook(name, address, age, phone, email)
                         # Here we call the writeDataToJsonFile function to write the data to the json file
                         newAddressBook.writeDataToJsonFile()
@@ -97,7 +94,7 @@ def runProgram():
             phone = input("\t Phone: ")
             email = input("\t Email: ")
             insertUser(name, address, age, phone, email)
-        elif userInput == 2: # Runs the showAllUsers function.
+        elif userInput == 2: # Runs the getPersons function.
             print("\n") 
             print("Showing all users:")
             print("\n")

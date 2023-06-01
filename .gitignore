@@ -2,3 +2,19 @@
 .idea/ 
 yearOne/programing/python/regex-project/env
 NOT_School_Work/keylogger/env
+
+
+# Biology exam latex files
+/yearOne/biology/exam/main.aux
+/yearOne/biology/exam/main.log
+/yearOne/biology/exam/main.fdb_latexmk
+/yearOne/biology/exam/main.fls
+/yearOne/biology/exam/main.toc
+/yearOne/biology/exam/main.synctex.gz
+/yearOne/biology/exam/main.out
+/yearOne/biology/exam/main.pdf
+/yearOne/biology/exam/main.blg
+/yearOne/biology/exam/main.bbl
+/yearOne/biology/exam/main.run.xml
+/yearOne/biology/exam/main.bcf
+/yearOne/biology/exam/main.synctex(busy)

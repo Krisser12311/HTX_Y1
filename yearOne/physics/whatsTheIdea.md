@@ -1,1 +1,0 @@
-Ig this is going to be a tool to calculate stuff in physic. 
