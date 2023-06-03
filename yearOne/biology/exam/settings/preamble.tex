@@ -16,5 +16,18 @@
 \usepackage{geometry}
 \usepackage{tabularx, booktabs, siunitx}
 \usepackage{multirow}
+\usepackage{titlesec}
+\usepackage{longtable}
+\usepackage[margin=0.2cm]{caption}
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}[runin]
+{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
 \usepackage{natbib} % Works with.bib files
 \bibliographystyle{apalike} 
