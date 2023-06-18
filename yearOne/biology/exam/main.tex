@@ -24,6 +24,11 @@
 %\lhead{Gruppe 1} % Sets the left side of the header to "Gruppe 1"
 
 \begin{document}
+    \makeatletter
+    \@addtoreset{section}{part}
+    \makeatother
+    \renewcommand{\thepart}{\arabic{part}}
+    \renewcommand*\thesection{\thepart.\arabic{section}}
     %\providecommand\NAT
     \input{chapters/00TitlePage.tex}
     % Alle spørgsmål vil få sin egen fil, som vil blive inkluderet her.
