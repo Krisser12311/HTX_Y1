@@ -1,10 +1,9 @@
 .vscode/
 .idea/ 
-yearOne/programing/python/regex-project/env
+yearTwo/programing/python/regex-project/env
 NOT_School_Work/keylogger/env
 
 
-# Biology exam latex files
 /yearOne/biology/exam/main.aux
 /yearOne/biology/exam/main.log
 /yearOne/biology/exam/main.fdb_latexmk
@@ -17,3 +16,17 @@ NOT_School_Work/keylogger/env
 /yearOne/biology/exam/main.run.xml
 /yearOne/biology/exam/main.bcf
 /yearOne/biology/exam/main.synctex(busy)
+
+
+/yearTwo/fysik/eksammen/main.aux
+/yearTwo/fysik/eksammen/main.log
+/yearTwo/fysik/eksammen/main.fdb_latexmk
+/yearTwo/fysik/eksammen/main.fls
+/yearTwo/fysik/eksammen/main.toc
+/yearTwo/fysik/eksammen/main.synctex.gz
+/yearTwo/fysik/eksammen/main.out
+/yearTwo/fysik/eksammen/main.blg
+/yearTwo/fysik/eksammen/main.bbl
+/yearTwo/fysik/eksammen/main.run.xml
+/yearTwo/fysik/eksammen/main.bcf
+/yearTwo/fysik/eksammen/main.synctex(busy)

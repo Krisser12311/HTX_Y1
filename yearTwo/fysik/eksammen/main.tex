@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+\input{settings/preamble.tex}
+
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=30mm,
+    bottom=30mm,
+}
+\hypersetup{
+    linkcolor=black,
+    colorlinks=false,
+    pdftitle={Fysik eksammen opgaver - Kristoffer Sørensen},
+    pdfauthor={Kristoffer Sørensen},
+    % Remove the red border around links
+    pdfborder={0 0 0},
+}
+
+\pagestyle{fancy} % definds the pagestyleing
+\fancyhf{} % Removes the wired header text
+\renewcommand{\headrulewidth}{0pt} % Removes the line under the header
+\cfoot{Side \thepage\ af \pageref{LastPage}} % Sets the right side of the footer to "Page X of Y"
+%\lhead{Gruppe 1} % Sets the left side of the header to "Gruppe 1"
+
+\begin{document}
+    \input{chapters/00TitlePage.tex}
+    \input{chapters/01Bolger.tex}
+    %\newpage
+    %\printbibliography[ heading=bibintoc, title={Litteratur}]
+    %\input{chapters/99Bilag.tex}
+\end{document}
