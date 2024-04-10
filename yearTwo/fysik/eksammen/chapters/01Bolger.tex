@@ -1,23 +1,73 @@
 \section{Eksammens opgave 1 - Lys}\label{sec:eks1}
 \subsection{a Beregn lysets frekvens i luft når bølgelængden er 560nm}
-For at finde frem til frekvensen af lys ved 560nm, skal man bruge formlen for hastigheden først det skal man da man ikke ved hvad svingningstiden er.
-\begin{equation}
-    V=\lambda/T
-\end{equation}
-\begin{equation}
-    V=\lamda * f
-\end{equation}
-\begin{equation}
+For at finde frem til frekvensen af lys ved 560nm, skal man bruge formlen for hastigheden, da den indeholder to værdier som man kender og en man ikke kender. Lysets hastighed er en tabel værdi som er afhægning af hvad omgiverlser den er i. Og bølgelængden \begin{math}\lambda\end{math} er givet i opgaven.
+\begin{equation*}
+    V=\frac{\lambda}{T}
+\end{equation*}
+Man vil gerne have frekvensen til at stå alene. Sådan at man bare kan regne den ud. Det gør man ved at gange tiden over på den anden side af lighedstegnet, og dermed fjerne den fra den anden side. 
+\begin{equation*}
+    V=\lambda\cdot T
+\end{equation*}
+For at erstatte Tiden med frekvensen f bruger man det faktum at frekvensen er hvor mange gange bølgen svinger i løbet af et sekundt.
+\begin{equation*}
+    V=\lambda \cdot f 
+\end{equation*}
+For så at få frekvensen til at stå alene ganger man med f hvilket giver:
+\begin{equation*}
     f=\frac{V}{\lambda}
-\end{equation}
-
-\begin{equation}
-    f=\frac{3*10^8 m}{560*10^-9 m}
-\end{equation}
-\begin{equation}
-    f=5.357*10^14 Hz
-\end{equation}
+\end{equation*}
+Så er resten nærmest bare at indsætte værdierne i formlen og regne ud. (Bid mærke i at bølgelængden er i nm, og derfor skal konverteres til meter før den kan bruges i formlen. \begin{math}1 nm=10^-9m\end{math})
+\begin{equation*}
+    f=\frac{3 \cdot 10^8 m}{560 \cdot 10^{-9} m}
+\end{equation*}
+\textbf{\begin{equation*}
+    \mathcolorbox{yellow}{f=5.357 \cdot 10^{14} Hz}
+\end{equation*}}
 \subsection{Beregn brydningsvinklen når indfaldsvinklen er 15. Lav en skite der ilustrerer brydningen}
-
+For at finde frem til brydningsvinklen skal man bruge snells lov. Snells lov er en lov der beskriver hvordan lys brydes når det går fra et matriale til et andet. Brydningen skyldes hastighedsforskellen i de to materialer.
+\begin{equation*}
+    \frac{sin(I)}{sin(B)}=\frac{n_2}{n_1}
+\end{equation*}
+Da man ønsker at finde brydningsvinklen ved 15 grader, skal man reducere udtrykket så man kan finden det rigtige udtryk for brydningsvinklen. Det gør man ved at isolere \begin{math}sin(B)\end{math} på den ene side af lighedstegnet. Det gøres ved at gange \begin{math}sin(B)\end{math} over på den anden side af lighedstegnet. 
+\begin{equation*}
+    sin(I)=sin(B)\frac{n_2}{n_1}
+\end{equation*}
+Herefter dividres med \begin{math}\frac{n_2}{n_1}\end{math} for at isolere \begin{math}sin(B)\end{math}
+Så kommer det tilsidst til at se sådan her ud:
+\begin{equation*}
+    sin(B)=sin(I)\cdot\frac{n_1}{n_2}
+\end{equation*}
+Så indsættes værdierne i formlen og regnes ud. 
+\begin{equation*}
+    sin(B)=sin(15)\cdot\frac{1}{1.33}
+\end{equation*}
+\begin{equation*}
+    sin(B)=0,1946
+\end{equation*}
+Så bruges invers sinus for at finde vinklen.
+\begin{equation*}
+    B=sin^{-1}(0,1946)
+\end{equation*}
+Dette giver en brydningsvinkel på 11 grader.
+\begin{equation*}
+    \mathcolorbox{yellow}{B=11^{\circ}}
+\end{equation*}
 \subsection{Find den kritiske vinkel hvor der totalreflektionen indtræffer}
 Et nyt forsøg laves hvor lysstrålen sendes fra sprit op i luften. 
+For at finde den kritiske vinkel skal man bruge følgende formel:
+\begin{equation*}
+    sin(I_c)=\frac{n_2}{n_1}
+\end{equation*}
+Her er \begin{math}I_c\end{math} den kritiske vinkel. \begin{math}n_2\end{math} er luftens brydningsindex og \begin{math}n_1\end{math} er sprits brydningsindex.
+\begin{equation*}
+    sin(I_c)=\frac{1}{1.36}
+\end{equation*}
+\begin{equation*}
+    sin(I_c)=0.73529
+\end{equation*}
+\begin{equation*}
+    I_c=sin^{-1}(0.73529)
+\end{equation*}
+\begin{equation*}
+    \mathcolorbox{yellow}{I_c=47.3^{\circ}}
+\end{equation*}
