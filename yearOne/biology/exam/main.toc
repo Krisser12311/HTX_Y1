@@ -1,0 +1,20 @@
+\babel@toc {danish}{}\relax 
+\contentsline {part}{1\hspace {1em}Celletyper og deres organeller}{4}{part.1}%
+\contentsline {paragraph}{Cellekernen (nucleus)}{4}{part.1}%
+\contentsline {paragraph}{Mitokondrier}{5}{part.1}%
+\contentsline {part}{2\hspace {1em}Transport ind og ud af celler}{7}{part.2}%
+\contentsline {part}{3\hspace {1em}Biokemiske processer}{11}{part.3}%
+\contentsline {part}{4\hspace {1em}Forklar de 2 biokemiske processer respiration og fotosyntese.}{11}{part.4}%
+\contentsline {part}{5\hspace {1em}Makromolekyler}{15}{part.5}%
+\contentsline {part}{6\hspace {1em}Fordøjelse}{20}{part.6}%
+\contentsline {part}{7\hspace {1em}Hormonregulering hos kvinder}{23}{part.7}%
+\contentsline {part}{8\hspace {1em}Hormonregulering hos mænd}{25}{part.8}%
+\contentsline {part}{9\hspace {1em}Organer og kredsløb}{27}{part.9}%
+\contentsline {part}{10\hspace {1em}Organer og kredsløb}{29}{part.10}%
+\contentsline {part}{11\hspace {1em}Enzymer}{31}{part.11}%
+\contentsline {part}{12\hspace {1em}Proteinsyntese}{34}{part.12}%
+\contentsline {part}{13\hspace {1em}Genetik}{36}{part.13}%
+\contentsline {part}{14\hspace {1em}Evolution}{38}{part.14}%
+\contentsline {part}{15\hspace {1em}Kulstofkredsløb}{40}{part.15}%
+\contentsline {part}{16\hspace {1em}DNA og kromosomer}{42}{part.16}%
+\contentsline {part}{17\hspace {1em}Bakteriel vækst}{44}{part.17}%
