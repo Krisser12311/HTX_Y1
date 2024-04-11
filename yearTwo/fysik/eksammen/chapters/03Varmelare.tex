@@ -1,0 +1,53 @@
+\section{Varmelære}
+\subsection{Beregn varmen der skal bruges til at opvarmningen af vandet når det varmes fra 10 grader til 100 grader}
+For at finde den varme der kræves for at opvarme vandet fra 10 grader til 100 grader kan beskrives ved formlen: 
+\begin{equation*}
+    Q=m \cdot c \cdot \Delta T
+\end{equation*}
+Her er m masssen c (\begin{math}
+    \frac{J}{kg \cdot K}
+\end{math}) er den specefikke varmekapacitet og $\Delta T$ er temperaturforskellen (Grader celcius). Og Q er den varme der kræves (Joule)
+For at finde massen skal man sige: 
+\begin{equation*}
+    m=\rho \cdot V
+\end{equation*}
+Her er $\rho$ densitet og V volumen.
+\begin{equation*}
+    m=0,8 \cdot 10^{-3} m^3  \cdot 100 \frac{kg}{m^3}=0,08 kg
+\end{equation*}
+\begin{equation*}
+    Q=0,8 kg \cdot 4180 \frac{J}{kg \cdot C} \cdot 90
+\end{equation*}
+\begin{equation*}
+    \mathcolorbox{yellow}{Q=301100 J}
+\end{equation*}
+\subsection{Beregn elkedlens nyttet virkning og forklar forskællen mellem energiforbruget og varmen der er tilført vandet.}
+For at finde elkedlens nyttet virkning skal man bruge følgende formel: 
+\begin{equation*}
+    \eta=\frac{Q_udnyttet}{E_{tilført}}
+\end{equation*}
+Dog kan man ikke bare sætte tallene ind i formlen da man har fået givet den brugte energi i kwH og ikke i Joules. 
+Derfor må man omregne det til Joules:
+\begin{equation*}
+    1 kWh=3,6 \cdot 10^6 J
+\end{equation*}
+Det vil sige at de 0,134 kWh er lig med:
+\begin{equation*}
+    0,134 kWh=0,134 kWh \cdot 3,6 \cdot 10^6 J
+\end{equation*}
+\begin{equation*}
+    \mathcolorbox{yellow}{0,134 kWh=482400 J}
+\end{equation*}
+Nu kan der bare indsættes i formlen:
+\begin{equation*}
+    \eta=\frac{301100 J}{482400 J}\cdot 100
+\end{equation*}
+\begin{equation*}
+    \mathcolorbox{yellow}{\eta=62\%}
+\end{equation*}
+
+\subsection{Beregn fællestemperaturen af tekanden og vandet når der er indtrådt termisk ligevægt}
+For at finde fællestemperaturen skal man bruge følgende formel:
+\begin{equation*}
+    T_{fælles}= \frac{m_a \cdot C_a \cdot T_a + m_v c_v \cdot T_v}{m_g}
+\end{equation*} % todo make fælles temperatur
