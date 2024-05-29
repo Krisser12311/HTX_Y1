@@ -1,0 +1,56 @@
+// Program Flowchart
+digraph {
+    A [label="Start" shape=oval]
+    B [label="Initialize webcam" shape=rectangle]
+    C [label="Check if webcam is available" shape=diamond]
+    D [label="Webcam not available" shape=rectangle]
+    E [label="Display message: \"Webcam not available\"" shape=rectangle]
+    F [label="Take screenshot" shape=rectangle]
+    G [label="Get timestamp" shape=rectangle]
+    H [label="Save screenshot" shape=rectangle]
+    I [label="Display message: \"Screenshot saved\"" shape=rectangle]
+    J [label="Wait 5 seconds" shape=rectangle]
+    K [label="Webcam available" shape=rectangle]
+    L [label="Capture frame from webcam" shape=rectangle]
+    M [label="Check frame read success" shape=diamond]
+    N [label="Not successful" shape=rectangle]
+    O [label="Display message: \"Couldn't read\"" shape=rectangle]
+    P [label="Break loop" shape=rectangle]
+    Q [label="Successful" shape=rectangle]
+    R [label="Save frame" shape=rectangle]
+    S [label="Display message: \"Frame saved\"" shape=rectangle]
+    T [label="Take screenshot" shape=rectangle]
+    U [label="Display message: \"Screenshot taken\"" shape=rectangle]
+    V [label="Save screenshot" shape=rectangle]
+    W [label="Display message: \"Screenshot saved\"" shape=rectangle]
+    X [label="Wait 5 seconds" shape=rectangle]
+    Y [label="Close webcam" shape=rectangle]
+    Z [label="End" shape=oval]
+    A -> B
+    B -> C
+    C -> D [label="No"]
+    D -> E
+    E -> F
+    F -> G
+    G -> H
+    H -> I
+    I -> J
+    J -> E
+    C -> K [label="Yes"]
+    K -> L
+    L -> M
+    M -> N [label="No"]
+    N -> O
+    O -> P
+    P -> Y
+    M -> Q [label="Yes"]
+    Q -> R
+    R -> S
+    S -> T
+    T -> U
+    U -> V
+    V -> W
+    W -> X
+    X -> K
+    Y -> Z
+}
