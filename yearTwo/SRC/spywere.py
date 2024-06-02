@@ -1,4 +1,3 @@
-import keyboard
 import time
 import cv2
 import pyautogui
@@ -35,9 +34,6 @@ def startUp():
             screenshot.save(filenameScreenShot)
             print(f"Screenshot saved as {filenameScreenShot}")
             time.sleep(5)
-
-
-            time.sleep(5)
-        print("Closes webcam")
+        startUp()
 
 startUp()
